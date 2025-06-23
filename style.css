@@ -1,0 +1,156 @@
+/* 🌐 الصفحة العامة */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* 🌙 الوضع الليلي */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #e2e2e2;
+}
+
+.dark-mode .container {
+  background-color: #2b2b2b;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s ease;
+}
+
+/* 🖋️ عنوان */
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 25px;
+}
+
+/* ✅ المهمة */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9f0f7;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  animation: fadeIn 0.4s ease;
+  transition: background 0.3s ease;
+}
+
+li.completed {
+  background: #d1ffd1;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.dark-mode li {
+  background: #3a3a3a;
+}
+
+small {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+.dark-mode button {
+  background-color: #5c7aff;
+  color: #f1f1f1;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  padding: 8px;
+  margin: 5px 5px 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: calc(100% - 12px);
+  box-sizing: border-box;
+}
+
+#toggleModeBtn {
+  float: right;
+  margin-bottom: 10px;
+  background-color: #ffa500;
+}
+
+/* ✨ الأنيميشن */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dark-mode small {
+  color: #aaa;
+}
+
+
+/* الشكل العام للتنبيه */
+.reminder-text {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #cc0000; /* افتراضي في الوضع العادي */
+}
+
+/* الشكل الخاص بالوضع الليلي */
+.dark-mode .reminder-text {
+  color: #ff9090; /* لون أهدى وأجمل */
+}
+.added-time {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #777;
+}
+
+.dark-mode .added-time {
+  color: #bbb;
+}
+.add {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 10px auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.add:hover {
+  transform: scale(1.05);
+}
